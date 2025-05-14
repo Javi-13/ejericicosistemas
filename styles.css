@@ -1,0 +1,163 @@
+    /* Estilos generales */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(to right, #303234, #e4e9eb);
+        color: #333;
+    }
+
+    /* Centrado y ajustes en las imágenes de los productos */
+    .product img {
+        width: 100%;
+        height: auto; /* Mantiene la relación de aspecto de la imagen */
+        border-radius: 8px;
+        margin-bottom: 15px;
+        display: block; /* Asegura que la imagen se comporte como un bloque */
+        margin-left: auto; /* Centra la imagen horizontalmente */
+        margin-right: auto; /* Centra la imagen horizontalmente */
+        object-fit: cover; /* Opcional, ajusta la imagen para cubrir el espacio sin distorsionarse */
+    }
+
+    /* Barra de navegación */
+    header {
+        background-color: #333;
+        color: white;
+        padding: 15px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .navbar .logo a {
+        font-size: 24px;
+        font-weight: bold;
+        text-decoration: none;
+        color: white;
+    }
+
+    .navbar .menu {
+        list-style-type: none;
+        display: flex;
+    }
+
+    .navbar .menu li {
+        margin-left: 20px;
+    }
+
+    .navbar .menu li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .navbar .menu li a:hover {
+        background-color: #555;
+        border-radius: 5px;
+    }
+
+    /* Estilos del campo de búsqueda */
+    .search-container input {
+        padding: 8px;
+        font-size: 16px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        width: 250px;
+    }
+
+    /* Estilos de los productos */
+    #product-list, #offer-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding: 20px;
+        max-width: 1200px;
+        margin: 20px auto;
+    }
+
+    .product {
+        background-color: white;
+        width: 220px;
+        margin: 15px;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        transition: transform 0.3s;
+    }
+
+    .product:hover {
+        transform: translateY(-10px);
+    }
+
+    .product img {
+        width: 100%;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+
+    .product h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .product p {
+        font-size: 14px;
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .product .price {
+        font-size: 16px;
+        color: #e74c3c;
+        font-weight: bold;
+    }
+
+    .product button {
+        background-color: #333;
+        color: white;
+        border: none;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .product button:hover {
+        background-color: #555;
+    }
+
+    /* Estilos de la sección de ofertas */
+    #offer-list h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    /* Estilos del pie de página */
+    footer {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 40px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
